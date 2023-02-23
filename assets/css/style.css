@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans Condensed';
+    font-family: "Open Sans Condensed";
+    background-color: #b3b3b3;
 }
 html {
     -webkit-text-size-adjust: none; /* for iOS Safari */
@@ -28,6 +29,76 @@ ul {
 ol,
 ul {
     padding-left: 0;
+}
+.button {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 3px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.button img {
+    margin-right: 0.5rem;
+    max-height: 1.3rem;
+}
+.button:focus {
+    outline: none;
+}
+.button.green {
+    color: #fff;
+    background-color: #2c7811;
+    border-color: #2c7811;
+}
+.button.green:hover {
+    color: #fff;
+    background-color: rgba(44, 120, 17, 0.25);
+    border-color: #2c7811;
+}
+.button.green:active {
+    color: #fff;
+    background-color: #2c7811;
+    border-color: #2c7811;
+}
+.button.green:disabled {
+    color: #fff;
+    background-color: #2c7811;
+    border-color: #2c7811;
+    opacity: 0.65;
+}
+.button.blue {
+    color: #fff;
+    background-color: #15539c;
+    border-color: #15539c;
+}
+.button.blue:hover {
+    color: #fff;
+    background-color: rgba(21, 83, 156, 0.25);
+    border-color: #15539c;
+}
+.button.blue:active {
+    color: #fff;
+    background-color: #15539c;
+    border-color: #15539c;
+}
+.button.blue:disabled {
+    color: #fff;
+    background-color: #15539c;
+    border-color: #15539c;
+    opacity: 0.65;
 }
 @media (prefers-reduced-motion: no-preference) {
     html {
