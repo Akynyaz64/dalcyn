@@ -27,35 +27,46 @@
         <link href="https://fonts.googleapis.com/css?family=Open Sans Condensed:700" rel="stylesheet" />
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
         <main class="main-div">
-            <div class="login-div">
-                <div class="container">
-                    <button class="button blue">More courses</button>
+            <nav>
+                <div class="navbar navbar-expand-lg">
+                    <div class="container-fluid d-flex justify-content-end">
+                        <div class="navbar-col">
+                            <ul class="nav-list">
+                                <li class="nav-item"><a class="nav-link" href=""><img src="assets/img/ru.png" alt=""></a></li>
+                                <li class="nav-item"><a class="nav-link" href=""><img src="assets/img/tm.png" alt=""></a></li>
+                                <li class="nav-item"><a class="nav-link" href=""><img src="assets/img/en.png" alt=""></a></li>
+                                <li class="nav-item">Don't have account yet?</li>
+                                <li class="nav-item"><button type="button" class="button blue button-long">Sign up</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="login-bg">
+                <div class="login-div">
+                    <div class="container">
+                        <div class="form-div">
+                            <img src="assets/img/logo.png" alt="Logo" />
+                            <form class="login-form text-center">
+                                <h4 class="form-title">Log into your account</h4>
+                                <div class="form-group mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required />
+                                </div>
+                                <div class="form-group mb-2">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" required />
+                                </div>
+                                <div class="mb-3 form-check text-start">
+                                    <input type="checkbox" class="form-check-input" id="logged_in" />
+                                    <label class="form-check-label" for="logged_in">Keep me logged in</label>
+                                </div>
+                                <h4 class="form-title">or</h4>
+                                <button type="submit" class="button blue mx-auto">Login</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
